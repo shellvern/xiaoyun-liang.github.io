@@ -1,3 +1,5 @@
+# Hexo version: v4.2.1
+
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -5,11 +7,11 @@
 # Site
 title: 尤加利 · 渺渺星空
 subtitle: 自由思考，随手记录
-description: 
+description: 现实世界的旁观者，在虚拟时空漫步
 keywords: 思考，观察，记录
 author: 尤加利
 language: en
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -22,6 +24,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
+# 这里设定一些基本文件夹的名称，如资源文件夹等
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -29,7 +32,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: [README.md]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -41,7 +44,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: false #设为 true 后，当你新建一个 post 的时候，会在同级目录生成一个相同名字的文件夹
 relative_link: false
 future: true
 highlight:
@@ -51,6 +54,17 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+
+#这一段是新加的
+symbols_count_time:  
+  symbols: true  #文章字数统计
+  time: true   #文章阅读时长统计
+  total_symbols: true  #站点总字数统计
+  total_time: true   #站点阅读时长
+  exclude_codeblock: false
+  awl: 2  #awl（Average Word Length）的数值是设定多少字符统计为一个字（word），中文博客需要设置为 2
+  wpm: 300  #Words Per Minute是你的阅读速度，多少字（word）统计为阅读时长一分钟
+ 
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -103,6 +117,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# 设定执行 'hexo deploy' 命令后提交的代码仓库地址
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

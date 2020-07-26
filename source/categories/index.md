@@ -1,7 +1,8 @@
 ---
 title: categories
 date: 2020-07-22 11:03:30
-type: "categories"
+type: "categories" #主题会自动为这个页面显示所有分类
+comments: false #文章中启动了评论，默认页面也会带出来，可在这里关闭
 ---
 
 
