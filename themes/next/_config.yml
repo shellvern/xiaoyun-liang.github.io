@@ -119,8 +119,8 @@ menu:
   home: / || fa fa-home  #|| 后的 home 即为图标名称
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -250,8 +250,8 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
+  separated_meta: false #设为false后只显示图标和统计数字
+  item_text_post: false
   item_text_total: false
   awl: 2
   wpm: 300
@@ -264,13 +264,13 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: true
+  enable: false
   animation: true
   #comment: 你的鼓励将伴我度过黎明前的黑暗
 
 reward:
   #wechatpay: /images/wechatpay.jpg
-  alipay: /images/alipay.png
+  #alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -623,7 +623,7 @@ valine:
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: zh-cn # Language, available values: en, zh-cn
-  visitor: true # Article reading statistic
+  visitor: false # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
@@ -693,8 +693,8 @@ cnzz_siteid:
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  app_id: fSqJDzmCDXrbh8ba2eB9kiC8-gzGzoHsz  # <your app id>
+  app_key: Hni2itxjz9wc0OSzh7SxXVBz # <your app key>
   # Required for apps from CN region
   server_url: # <your server url>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security

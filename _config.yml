@@ -12,6 +12,7 @@ keywords: 思考，观察，记录
 author: 尤加利
 language: en
 timezone: Asia/Shanghai
+email: lxymogu@126.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -122,5 +123,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/shellvern/shellvern.github.io.git
+  repo: git@github.com:shellvern/shellvern.github.io.git
   branch: master
