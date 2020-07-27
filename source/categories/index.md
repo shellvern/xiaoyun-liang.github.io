@@ -2,6 +2,7 @@
 title: categories
 date: 2020-07-22 11:03:30
 type: "categories"
+comments: false
 ---
 
 

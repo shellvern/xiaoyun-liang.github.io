@@ -5,7 +5,7 @@
 # Site
 title: 尤加利 · 渺渺星空
 subtitle: 自由思考，随手记录
-description: 
+description: 现实世界的旁观者，在虚拟时空漫步
 keywords: 思考，观察，记录
 author: 尤加利
 language: en
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://shellvern.github.io/ #默认是http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,6 +73,18 @@ category_map:
 tag_map:
          Hometown
          Inland
+
+symbols_count_time:
+  #文章内是否显示  
+  symbols: true
+  time: true
+  #网页底部是否显示
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 2
+  wpm: 275
+  suffix: "mins."
          
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -107,5 +119,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/shellvern/shellvern.github.io.git
+  repo: git@github.com:shellvern/shellvern.github.io.git
   branch: master
