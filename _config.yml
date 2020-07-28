@@ -16,7 +16,7 @@ email: lxymogu@126.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://shellvern.github.io/ #默认是http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -56,15 +56,6 @@ highlight:
   wrap: true
   hljs: false
 
-#这一段是新加的
-symbols_count_time:  
-  symbols: true  #文章字数统计
-  time: true   #文章阅读时长统计
-  total_symbols: true  #站点总字数统计
-  total_time: true   #站点阅读时长
-  exclude_codeblock: false
-  awl: 2  #awl（Average Word Length）的数值是设定多少字符统计为一个字（word），中文博客需要设置为 2
-  wpm: 300  #Words Per Minute是你的阅读速度，多少字（word）统计为阅读时长一分钟
  
 
 # Home page setting
@@ -88,7 +79,16 @@ category_map:
 tag_map:
          Hometown
          Inland
-         
+
+symbols_count_time:
+  #文章内是否显示  
+  symbols: true
+  time: true
+  #网页底部是否显示
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true

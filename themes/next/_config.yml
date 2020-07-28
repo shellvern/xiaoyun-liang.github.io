@@ -240,7 +240,7 @@ read_more_btn: true
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: true
   updated_at:
     enable: true
@@ -250,12 +250,12 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: false #设为false后只显示图标和统计数字
-  item_text_post: false
-  item_text_total: false
-  awl: 2
-  wpm: 300
-  suffix: "mins."
+  separated_meta: true  #设为false后不换行
+  item_text_post: false  #设为false后只显示图标和统计数字
+  item_text_total: false  #设为false后只显示图标和统计数字
+  exclude_codeblock: false
+  awl: 2  #Average Word Length的数值是设定多少字符统计为一个字（word），中文博客需要设置为2
+  wpm: 275  #Words Per Minute是你的阅读速度，多少字（word）统计为阅读时长一分钟
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -692,7 +692,7 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: fSqJDzmCDXrbh8ba2eB9kiC8-gzGzoHsz  # <your app id>
   app_key: Hni2itxjz9wc0OSzh7SxXVBz # <your app key>
   # Required for apps from CN region
@@ -700,7 +700,7 @@ leancloud_visitors:
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
